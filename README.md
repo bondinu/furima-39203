@@ -1,6 +1,6 @@
 # README
 
-## users テーブル
+## Users テーブル
 
 | Column                          | Type   | Options     |
 | ------------------              | ------ | ----------- |
@@ -14,7 +14,7 @@
 | last_name_kana                  | string | null: false |
 
 
-## profiles テーブル
+## Addresses テーブル
 
 | Column                          | Type       | Options     |
 | ------------------              | ------     | ----------- |
@@ -26,7 +26,7 @@
 | user                            | references | null: false, foreign_key: true |
 
 
-## items テーブル
+## Items テーブル
 
 | Column             | Type       | Options     |
 | ------------------ | ------     | ----------- |
@@ -36,10 +36,9 @@
 | user               | references | null: false, foreign_key: true |
 
 
-## comments テーブル
+## Orders テーブル
 
 | Column             | Type       | Options     |
 | ------------------ | ------     | ----------- |
-| content            | text       | null: false |
 | item               | references | null: false, foreign_key: true |
 | user               | references | null: false, foreign_key: true |
