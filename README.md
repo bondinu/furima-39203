@@ -13,6 +13,11 @@
 | last_name_kana                  | string | null: false |
 | birthday                        | date   | null: false |
 
+### Association
+- has_many:orders
+- has_many:items
+
+
 
 ## Addresses テーブル
 
@@ -25,6 +30,10 @@
 | building                        | string     |             |
 | phone_number                    | string     | null: false |
 | order                           | references | null: false, foreign_key: true |
+
+### Association
+- belong_to:order
+
 
 
 ## Items テーブル
@@ -41,6 +50,11 @@
 | cost               | integer    | null: false |
 | user               | references | null: false, foreign_key: true |
 
+### Association
+- belongs_to:user
+- has_one:order
+
+
 
 ## Orders テーブル
 
@@ -48,3 +62,7 @@
 | ------------------ | ------     | ----------- |
 | item               | references | null: false, foreign_key: true |
 | user               | references | null: false, foreign_key: true |
+
+### Association
+- belongs_to:user
+- belongs_to:item

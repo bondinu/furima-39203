@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="XvNCRZxDfjN5XQv4PcP4" name="ページ1">
-        <mxGraphModel dx="2530" dy="789" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+        <mxGraphModel dx="1887" dy="953" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -131,18 +131,6 @@
                             <mxPoint x="-530" y="328"/>
                         </Array>
                     </mxGeometry>
-                </mxCell>
-                <mxCell id="129" value="has_many:orders&lt;br&gt;has_many:items" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="-730" y="200" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="130" value="belong_to:order" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-1040" y="210" width="110" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="132" value="belongs_to:user&lt;br&gt;has_one:order" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="-340" y="190" width="160" height="50" as="geometry"/>
-                </mxCell>
-                <mxCell id="134" value="belongs_to:user&lt;br&gt;belongs_to:item" style="rounded=0;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-                    <mxGeometry x="-534" y="550" width="160" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="139" value="" style="endArrow=none;html=1;" parent="1" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
