@@ -19,7 +19,7 @@
 | Column                          | Type       | Options     |
 | ------------------              | ------     | ----------- |
 | postcode                        | string     | null: false |
-| prefecture                      | integer     | null: false |
+| prefecture_id                   | integer    | null: false |
 | city                            | string     | null: false |
 | address                         | string     | null: false |
 | building                        | string     |             |
@@ -33,12 +33,12 @@
 | ------------------ | ------     | ----------- |
 | title              | string     | null: false |
 | description        | text       | null: false |
-| category           | integer    | null: false |
-| status             | integer    | null: false |
-| postage            | integer    | null: false |
-| region             | integer    | null: false |
-| deadline           | integer    | null: false |
-| cost               | string     | null: false |
+| category_id        | integer    | null: false |
+| status_id          | integer    | null: false |
+| postage_id         | integer    | null: false |
+| region_id          | integer    | null: false |
+| deadline_id        | integer    | null: false |
+| cost               | integer    | null: false |
 | user               | references | null: false, foreign_key: true |
 
 
