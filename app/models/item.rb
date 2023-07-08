@@ -10,6 +10,7 @@ class Item < ApplicationRecord
   belongs_to :prefecture
   belongs_to :deadline
 
+  validates :image          , presence: true
   validates :title          , presence: true
   validates :description    , presence: true
   validates :cost           , presence: true
