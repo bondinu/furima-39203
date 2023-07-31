@@ -19,6 +19,11 @@ RSpec.describe OrderAddress, type: :model do
     end
 
     context '内容に問題がある場合' do
+      it 'トークンが必須' do
+        @order_address.token = ''
+        @order_address.valid?
+        expect(@order_address.errors.full_messages).to include("Token can't be blank")
+      end
       it '郵便番号が必須' do
         @order_address.postcode = ''
         @order_address.valid?

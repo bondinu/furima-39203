@@ -3,6 +3,7 @@ class OrderAddress
   attr_accessor :postcode, :prefecture_id, :city, :address, :building, :phone_number, :item_id, :user_id, :token
 
   with_options presence: true do
+    validates :token
     validates :postcode, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "is invalid. Include hyphen(-)"}
     validates :city, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー]+\z/ }
     validates :address, format: { with: /\A[ぁ-んァ-ヶ一-龥々ー0-9\- ]+\z/ }
